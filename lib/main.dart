@@ -1,4 +1,5 @@
 import 'package:bloc_demo/bloc_counter/counter_bloc.dart';
+import 'package:bloc_demo/pages/detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
@@ -61,7 +62,7 @@ class MyHomePage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                
+                Get.to(const DetailsScreen());
               },
               child: const Icon(Icons.person_3_rounded),
             ),
